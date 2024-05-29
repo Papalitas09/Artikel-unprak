@@ -4,53 +4,69 @@
   gap: 0;
   box-sizing: border-box;
   font-family: monospace, sans-serif;
+  
 }
 
 body {
-  background-color: dimgray;
+  background-color: #222831;
+}
+
+.parent {
+  width: 70%;
+  margin: auto;
+  background-color: #31363F;
+  height: 500rem;
 }
 
 .header {
-  width: 100%;
-  height: 5rem;
-  background-color: aqua;
-  
-}
-
-.navbar {
-  background-color: #fff;
+  background-color: #76ABAE;
   width: 100%;
   height: 3rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  
+}
+
+.header input {
+  width: 40rem;
+  height: 1.8rem;
+  border-radius: 20px;
+  background-color:#76ABAE;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.header img {
+  width: 1rem;
+  position: absolute;
+  right: 41.3rem;
+  top: 1rem;
 
 }
 
+.header button {
+  width: 4rem;
+  height: 1.8rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  
+}
+
+.account {
+  font-size: 1.3rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EEEEEE;
+  width: 100%;
+  height: 2.5rem;
+}
 
 .navbar a {
   text-decoration: none;
+  font-size: 1.2rem;
   color: #000;
-  font-size: 1.50rem;
 }
-
-
-
-
-.navbar a:hover {
-  color: yellowgreen;
-  transition: all 0.4s;
-  cursor: pointer;
-}
-
-
-/* parents content + side bar */
-
-.parents-c-sb {
-
-  width: 100%;
-  height: 250vh;
-}
-
-/* sidebar */ 
