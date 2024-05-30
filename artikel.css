@@ -4,7 +4,6 @@
   gap: 0;
   box-sizing: border-box;
   font-family: monospace, sans-serif;
-  
 }
 
 body {
@@ -14,12 +13,12 @@ body {
 .parent {
   width: 70%;
   margin: auto;
-  background-color: #31363F;
+  background-color: #31363f;
   height: 500rem;
 }
 
 .header {
-  background-color: #76ABAE;
+  background-color: #76abae;
   width: 100%;
   height: 3rem;
   display: flex;
@@ -27,13 +26,28 @@ body {
   align-items: center;
 }
 
+.header h1 {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.header h1:hover {
+  color: gray;
+
+  cursor: pointer;
+}
+
 .header input {
   width: 40rem;
   height: 1.8rem;
   border-radius: 20px;
-  background-color:#76ABAE;
+  background-color: #76abae;
   border: 1px solid #000;
   position: relative;
+  transition: all 0.4s ease-in-out;
+}
+.header input:hover {
+  background-color: wheat;
 }
 
 .header img {
@@ -41,7 +55,6 @@ body {
   position: absolute;
   right: 41.3rem;
   top: 1rem;
-
 }
 
 .header button {
@@ -49,18 +62,30 @@ body {
   height: 1.8rem;
   border-radius: 20px;
   font-size: 1rem;
-  
+  transition:  all 0.4s ease-in-out;
+}
+
+.header button:hover {
+  background-color: aquamarine;
 }
 
 .account {
   font-size: 1.3rem;
+  transition:  all 0.4s ease-in-out;
+  cursor: pointer;
 }
+
+.account:hover {
+  color: bisque;
+}
+
+
 
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   width: 100%;
   height: 2.5rem;
 }
@@ -69,4 +94,35 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   color: #000;
+  transition:  all 0.4s ease-in-out;
+}
+
+.iklan-top {
+  display: flex;
+  
+
+}
+
+.iklan-top img {
+  width: 27.8rem;
+}
+
+.iklan-top-p {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.navbar a:hover {
+  color: blue;
+}
+
+@media (max-width: 1080px) {
+  .header input {
+    width: 20rem;
+  }
+
+  .header img {
+    right: 25.5rem;
+  }
 }
